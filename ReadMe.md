@@ -69,7 +69,9 @@ docker-compose up
 
 ### URL
 
-[http:localhost](http:localhost)
+```bash
+http://localhost
+```
 
 <br>
 
