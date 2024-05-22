@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  # Banner
+  banner:
+    location: Banner.txt
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/wallet_app}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
+        type:
+           wrapper_array_handling: ALLOW
+    database: postgresql
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: wallet.app36@gmail.com
+    password: yzrtnkvtpbycsuam
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  key: ffEhtpE5/lfABdWIg7q6brJodYfmo/oig+3GLc/SN68xsEzsAnbqsIwEjjd3NYNxiycTTNsNUOWHSZQy1pLz7MzROT+VQ1ZOnQLHj2T79DcJV5rxr0LvbzgYWqEjz9PmiZkppWbaf0yGa3ZZFNHEsoc/5ni4Ii6liXyr2wEE8jo=
+  expiration: 600000
+
+# Project Description
+application:
+  title: 'wallet app'
+  version: 'v0.1'

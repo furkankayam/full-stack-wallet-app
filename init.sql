@@ -1,0 +1,1 @@
+CREATE DATABASE wallet_app;

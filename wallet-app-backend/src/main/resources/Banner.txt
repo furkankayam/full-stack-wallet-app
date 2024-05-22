@@ -1,0 +1,10 @@
+██     ██  █████  ██      ██      ███████ ████████
+██     ██ ██   ██ ██      ██      ██         ██
+██  █  ██ ███████ ██      ██      █████      ██
+██ ███ ██ ██   ██ ██      ██      ██         ██
+ ███ ███  ██   ██ ███████ ███████ ███████    ██
+
+Application Name: ${application.title}
+Application Version: ${application.version}
+${AnsiColor.RED} :: Spring Boot${spring-boot.formatted-version} :: ${AnsiColor.RED}
+${AnsiColor.DEFAULT}

@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+
+  wallet_app:
+    build: ./wallet-app-backend/.
+    container_name: wallet_app
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=jdbc:postgresql://postgresql_db:5432/wallet_app
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=postgres
+    depends_on:
+      - postgresql_db
+    networks:
+      - my-network
+
+  postgresql_db:
+    image: postgres:15.2
+    restart: always
+    container_name: postgresql_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - my-network
+
+  wallet_app_frontend:
+    build: ./wallet-app-frontend/.
+    container_name: wallet_app_frontend
+    ports:
+      - "80:80"
+    networks:
+      - my-network
+
+volumes:
+  postgres_data:
+
+
+networks:
+  my-network:
+    driver: bridge
