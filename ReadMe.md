@@ -49,8 +49,6 @@ Used Technologies in The Project:
 
 <br>
 
----
-
 ### Installation
 
 ```bash
