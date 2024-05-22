@@ -51,11 +51,7 @@ Used Technologies in The Project:
 
 ---
 
----
-
-### Windows
-
-##### Installation
+### Installation
 
 ```bash
 git clone https://github.com/Satoshi-Labs/wallet-app.git
@@ -63,27 +59,7 @@ git clone https://github.com/Satoshi-Labs/wallet-app.git
 
 <br>
 
-##### Usage
-
-```bat
-start.bat
-```
-
----
-
----
-
-### Linux & Mac
-
-##### Installation
-
-```bash
-git clone https://github.com/Satoshi-Labs/wallet-app.git
-```
-
-<br>
-
-##### Usage
+### Usage
 
 ```bash
 docker-compose up
@@ -91,13 +67,11 @@ docker-compose up
 
 <br>
 
-##### URL
+### URL
 
 [http:localhost](http:localhost)
 
----
-
----
+<br>
 
 <br>
 
