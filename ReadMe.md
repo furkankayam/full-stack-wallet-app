@@ -52,7 +52,7 @@ Used Technologies in The Project:
 ### Installation
 
 ```bash
-git clone https://github.com/Satoshi-Labs/wallet-app.git
+git clone https://github.com/furkankayam/wallet-app.git
 ```
 
 <br>
